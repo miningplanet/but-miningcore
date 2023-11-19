@@ -518,49 +518,42 @@
         "explorerTxLink": "https://openchains.info/coin/browncoin/tx/{0}",
         "explorerAccountLink": "https://openchains.info/coin/browncoin/address/{0}"
     },
-    "butkoin-sha256": {
-        "name": "ButKoin Sha256",
+    "butkoin-ghostrider": {
+        "name": "ButKoin Ghostrider",
         "canonicalName": "ButKoin",
         "symbol": "BUTK",
         "family": "bitcoin",
-        "website": "https://butcoin.tech/",
-        "market": "",
+        "website": "https://butkoin.com/",
+        "market": "https://explorer.butkoin.com/markets/btrmex/BUTK/USDT",
         "twitter": "https://twitter.com/ButKoin",
         "telegram": "",
-        "discord": "https://discord.com/invite/j7T82mKkrw",
+        "discord": "https://discord.com/invite/ggVkvBKZE2",
         "coinbaseHasher": {
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "sha256d"
+            "hash": "ghostrider"
         },
         "blockHasher": {
-            "hash": "reverse",
-            "args": [
-                {
-                    "hash": "sha256d"
-                }
-            ]
+            "hash": "sha256d"
         },
-        "blockTemplateRpcExtraParams": [
-            "sha256d"
-        ],
+        "shareMultiplier": 65536,
         "hasFounderFee": true,
         "hasMasterNodes": true,
-        "explorerBlockLink": "https://blocks.butcoin.tech/block/$hash$",
-        "explorerTxLink": "https://blocks.butcoin.tech/tx/{0}",
-        "explorerAccountLink": "https://blocks.butcoin.tech/address/{0}"
+        "explorerBlockLink": "https://explorer.butkoin.com/api/getblock?hash=$hash$",
+        "explorerTxLink": "https://explorer.butkoin.com/api/getrawtransaction?txid={0}",
+        "explorerAccountLink": "https://explorer.butkoin.com/ext/getaddress/{0}"
     },
     "butkoin-scrypt": {
         "name": "ButKoin Scrypt",
         "canonicalName": "ButKoin",
         "symbol": "BUTK",
         "family": "bitcoin",
-        "website": "https://butcoin.tech/",
-        "market": "",
+        "website": "https://butkoin.com/",
+        "market": "https://explorer.butkoin.com/markets/btrmex/BUTK/USDT",
         "twitter": "https://twitter.com/ButKoin",
         "telegram": "",
-        "discord": "https://discord.com/invite/j7T82mKkrw",
+        "discord": "https://discord.com/invite/ggVkvBKZE2",
         "coinbaseHasher": {
             "hash": "sha256d"
         },
@@ -594,9 +587,42 @@
         "shareMultiplier": 65536,
         "hasFounderFee": true,
         "hasMasterNodes": true,
-        "explorerBlockLink": "https://blocks.butcoin.tech/block/$hash$",
-        "explorerTxLink": "https://blocks.butcoin.tech/tx/{0}",
-        "explorerAccountLink": "https://blocks.butcoin.tech/address/{0}"
+        "explorerBlockLink": "https://explorer.butkoin.com/api/getblock?hash=$hash$",
+        "explorerTxLink": "https://explorer.butkoin.com/api/getrawtransaction?txid={0}",
+        "explorerAccountLink": "https://explorer.butkoin.com/ext/getaddress/{0}"
+    },
+    "butkoin-sha256": {
+        "name": "ButKoin Sha256",
+        "canonicalName": "ButKoin",
+        "symbol": "BUTK",
+        "family": "bitcoin",
+        "website": "https://butkoin.com/",
+        "market": "https://explorer.butkoin.com/markets/btrmex/BUTK/USDT",
+        "twitter": "https://twitter.com/ButKoin",
+        "telegram": "https://t.me/butkoin",
+        "discord": "https://discord.com/invite/ggVkvBKZE2",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "blockTemplateRpcExtraParams": [
+            "sha256d"
+        ],
+        "hasFounderFee": true,
+        "hasMasterNodes": true,
+        "explorerBlockLink": "https://explorer.butkoin.com/api/getblock?hash=$hash$",
+        "explorerTxLink": "https://explorer.butkoin.com/api/getrawtransaction?txid={0}",
+        "explorerAccountLink": "https://explorer.butkoin.com/ext/getaddress/{0}"
     },
     "cannabiscoin": {
         "name": "Cannabiscoin",
